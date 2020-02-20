@@ -18,11 +18,20 @@ header {
   display:flex;
   width:100%;
   height: 100vh;
+  background-color: black;
   background-image: url('Assest/Header_Image.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
-  justify-content: center;
+  background-position: center;
+  justify-content: flex-end;
   align-items: center;
+}
+
+.pitch_content {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  border: 5px white;
 }
 
 h1 {
@@ -88,10 +97,11 @@ body > section:nth-child(odd){
   cursor: pointer;
 }
 
-@media only screen and (max-width: 613px) {
+@media only screen and (max-width: 750px) {
   #pitch {
     background-image: none;
     background-color: black;
+    justify-content: center;
   }
 
   .price-card {
