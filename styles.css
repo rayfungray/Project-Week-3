@@ -13,7 +13,22 @@ header {
 .logo {
   max-width: 15%;
 } 
+#contact-us {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
 
+}
+
+.form {
+  margin-top: 51px;
+  padding: 20px;
+  border: 2px black solid;
+}
+
+.title {
+  height:10px;
+}
 #pitch {
   display:flex;
   width:100%;
@@ -32,7 +47,7 @@ header {
   font-weight: bold;
   font-size: 2em;
   background-color: #ffffff;
-  opacity:0.6;
+  opacity:.6;
   color:black;
 }
 .pitch_text {
@@ -79,7 +94,7 @@ body > section {
 }
 
 body > section:nth-child(odd){
-  background-color: #eee;
+  background-color: blue;
 }
 
 #pricing {
@@ -98,9 +113,15 @@ body > section:nth-child(odd){
   cursor: pointer;
 }
 
+.price-card img {
+  width:200px;
+  padding:10px;
+}
+
 .price-card > .price {
   display: block;
   font-size: 50px;
+  padding: 10px;
 }
 
 .price-card > .per-month {
@@ -118,15 +139,15 @@ body > section:nth-child(odd){
 
 .price-card > .buy {
   background-color: white;
-  color: red;
-  border: 2px solid red;
+  color: blue;
+  border: 2px solid blue;
   border-radius: 10px;
   margin-top: 25px;
   width: 87%;
 }
 
 .price-card > .buy:hover {
-  background-color: red;
+  background-color: blue;
   color: white;
   cursor: pointer;
 }
