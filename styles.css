@@ -56,6 +56,10 @@ header {
   opacity: 1;
 }
 
+.type-title h2 {
+  color:white
+}
+
 #type {
   
   display:flex;
@@ -63,9 +67,14 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  background-image: url('Assest/download.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: gray;
 }
 .type-card {
-  border:5px black solid;
+  border:5px #787878 solid;
   width:300px;
   height: 390px;
   background-color: black;
@@ -94,7 +103,11 @@ body > section {
 }
 
 body > section:nth-child(odd){
-  background-color: blue;
+  background-color:black;
+}
+
+body > section:nth-child(even){
+  background-color:#eee;
 }
 
 #pricing {
@@ -103,24 +116,37 @@ body > section:nth-child(odd){
   flex-wrap: wrap;
 }
 
+#show {
+  display:flex;
+  justify-content: center;
+}
+
 .price-card {
   text-align: center;
-  border: 1px solid royalblue;
+  border: 1px solid black;
   min-height: 200px;
-  border-radius: 3px;
+  border-radius: 10px;
   min-width: 125px;
   margin: 20px;
   cursor: pointer;
+  padding:9px;
+  width:20%;
+
+}
+
+.price-content {
+  height:50%;
 }
 
 .price-card img {
-  width:200px;
+  width:80%;
+  max-height:500px;
   padding:10px;
 }
 
 .price-card > .price {
   display: block;
-  font-size: 50px;
+  font-size: 5vw;
   padding: 10px;
 }
 
@@ -138,18 +164,25 @@ body > section:nth-child(odd){
 }
 
 .price-card > .buy {
-  background-color: white;
-  color: blue;
-  border: 2px solid blue;
+  
+  background-image: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+  color: #787878;
+  border: 2px solid gold;
   border-radius: 10px;
   margin-top: 25px;
   width: 87%;
 }
 
 .price-card > .buy:hover {
-  background-color: blue;
+  size:50px;
+  background-image: linear-gradient(to top right, black, gray);
   color: white;
   cursor: pointer;
+}
+
+.contact-form {
+  padding: 40px;
+  border: 2px dashed #787878;
 }
 
 @media only screen and (max-width: 750px) {
@@ -165,7 +198,7 @@ body > section:nth-child(odd){
   }
 
   .price-card > .price {
-    font-size: 85px;
+    font-size: 9vw;
   }
 
   .price-card > .per-month {
@@ -176,4 +209,5 @@ body > section:nth-child(odd){
     padding: 5px;
     margin-bottom: 20px;
   }
+
 }
