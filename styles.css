@@ -87,6 +87,10 @@ header {
   margin-top: 21px;
 }
 
+.type-card:hover {
+  border-color: yellow;
+}
+
 .type-title {
   display:flex;
   justify-content: center;
@@ -122,26 +126,32 @@ body > section:nth-child(even){
 }
 
 .price-card {
+  color:white;
   text-align: center;
   border: 1px solid black;
   min-height: 200px;
-  border-radius: 10px;
-  min-width: 125px;
+  background-color: black;
+  min-width: 200px;
   margin: 20px;
-  cursor: pointer;
-  padding:9px;
-  width:20%;
-
+  cursor: pointer;  
+  width:200px;
 }
-
 .price-content {
-  height:50%;
+  height:200px;
+  width:100%;
 }
+.price-card:hover {
+  -webkit-box-shadow: 5px 5px 15px 5px #9B9B9B; 
+  box-shadow: 5px 5px 15px 5px #9B9B9B;
+  
+}
+
 
 .price-card img {
   width:80%;
-  max-height:500px;
+  height:80%;
   padding:10px;
+  
 }
 
 .price-card > .price {
@@ -165,12 +175,21 @@ body > section:nth-child(even){
 
 .price-card > .buy {
   
-  background-image: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+  font-weight: bold;
+  background-color: peru;
   color: #787878;
   border: 2px solid gold;
-  border-radius: 10px;
-  margin-top: 25px;
-  width: 87%;
+  border-radius: 3px;
+  margin: 10px;
+  width: 60%;
+}
+.gramlight:hover {
+  content: url('https://cdn.shopify.com/s/files/1/1151/0688/products/rays.57dr-gb4-1.jpg?v=1532150414');
+
+}
+.wheel:hover{
+  content: url('https://cdn.shopify.com/s/files/1/1151/0688/products/rays.57dr-gb4-1.jpg?v=1532150414');
+  
 }
 
 .price-card > .buy:hover {
