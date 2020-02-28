@@ -129,9 +129,9 @@ body > section:nth-child(even){
   color:white;
   text-align: center;
   border: 1px solid black;
-  min-height: 200px;
+  min-height: 230px;
   background-color: black;
-  min-width: 200px;
+  min-width: 250px;
   margin: 20px;
   cursor: pointer;  
   width:200px;
@@ -156,7 +156,7 @@ body > section:nth-child(even){
 
 .price-card > .price {
   display: block;
-  font-size: 5vw;
+  font-size: 3vw;
   padding: 10px;
 }
 
@@ -217,7 +217,7 @@ body > section:nth-child(even){
   }
 
   .price-card > .price {
-    font-size: 9vw;
+    font-size: 5vw;
   }
 
   .price-card > .per-month {
