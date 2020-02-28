@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
 }
@@ -12,12 +16,12 @@ header {
 
 .logo {
   max-width: 15%;
-} 
+}
+
 #contact-us {
   display:flex;
   align-items: center;
   flex-direction: column;
-
 }
 
 .form {
@@ -29,6 +33,7 @@ header {
 .title {
   height:10px;
 }
+
 #pitch {
   display:flex;
   width:100%;
@@ -50,6 +55,7 @@ header {
   opacity:.6;
   color:black;
 }
+
 .pitch-text {
   text-align: center;
   padding: 40px;
@@ -60,8 +66,7 @@ header {
   color:white
 }
 
-#type {
-  
+#type {  
   display:flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -73,6 +78,7 @@ header {
   background-position: center;
   background-color: gray;
 }
+
 .type-card {
   border:5px #787878 solid;
   width:300px;
@@ -96,6 +102,7 @@ header {
   justify-content: center;
   width:100%;
 }
+
 h1 {
   text-align: center;
   margin: 0;
@@ -137,21 +144,21 @@ body > section:nth-child(even){
   width:200px;
   transition: 2ms;
 }
+
 .price-content {
   height:200px;
   width:100%;
 }
+
 .price-card:hover {
   -webkit-box-shadow: 5px 5px 15px 5px #9B9B9B; 
   box-shadow: 5px 5px 15px 5px #9B9B9B;  
 }
 
-
 .price-card img {
   width:80%;
   height:80%;
   padding:10px;
-  
 }
 
 .price-card > .price {
@@ -174,7 +181,6 @@ body > section:nth-child(even){
 }
 
 .price-card > .buy {
-  
   font-weight: bold;
   background-color: peru;
   color: #787878;
@@ -183,12 +189,19 @@ body > section:nth-child(even){
   margin: 10px;
   width: 60%;
 }
+
 .gramlight:hover {
   content: url('https://cdn.shopify.com/s/files/1/1151/0688/products/rays.57dr-gb4-1.jpg?v=1532150414');
-  }
+}
+
 .wheel:hover{
   content: url('https://cdn.shopify.com/s/files/1/1151/0688/products/rays.57dr-gb4-1.jpg?v=1532150414');
 }
+
+ #wheel-two:hover {
+   content: url('https://cdn.shopify.com/s/files/1/1151/0688/products/rays.57dr-gb4-1.jpg?v=1532150414');
+   width: 80%;
+ }
 
 .price-card > .buy:hover {
   size:50px;
@@ -200,6 +213,10 @@ body > section:nth-child(even){
 .contact-form {
   padding: 40px;
   border: 2px dashed #787878;
+}
+
+#wheel-two {
+  width: 67%;
 }
 
 @media only screen and (max-width: 750px) {
