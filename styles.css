@@ -42,7 +42,7 @@ header {
   align-items: center;
 }
 
-.pitch_content {
+.pitch-content {
   color: white;
   font-weight: bold;
   font-size: 2em;
@@ -50,7 +50,7 @@ header {
   opacity:.6;
   color:black;
 }
-.pitch_text {
+.pitch-text {
   text-align: center;
   padding: 40px;
   opacity: 1;
@@ -135,6 +135,7 @@ body > section:nth-child(even){
   margin: 20px;
   cursor: pointer;  
   width:200px;
+  transition: 2ms;
 }
 .price-content {
   height:200px;
@@ -142,8 +143,7 @@ body > section:nth-child(even){
 }
 .price-card:hover {
   -webkit-box-shadow: 5px 5px 15px 5px #9B9B9B; 
-  box-shadow: 5px 5px 15px 5px #9B9B9B;
-  
+  box-shadow: 5px 5px 15px 5px #9B9B9B;  
 }
 
 
@@ -185,11 +185,9 @@ body > section:nth-child(even){
 }
 .gramlight:hover {
   content: url('https://cdn.shopify.com/s/files/1/1151/0688/products/rays.57dr-gb4-1.jpg?v=1532150414');
-
-}
+  }
 .wheel:hover{
   content: url('https://cdn.shopify.com/s/files/1/1151/0688/products/rays.57dr-gb4-1.jpg?v=1532150414');
-  
 }
 
 .price-card > .buy:hover {
@@ -211,6 +209,11 @@ body > section:nth-child(even){
     justify-content: center;
   }
 
+  #type {
+    background-image: none;
+    background-color: black;
+  }
+
   .price-card {
     min-height: 300px;
     min-width: 225px;
@@ -227,6 +230,10 @@ body > section:nth-child(even){
   .price-card > .plan-name {
     padding: 5px;
     margin-bottom: 20px;
+  }
+
+  .price-card img{
+    width:88%;
   }
 
 }
